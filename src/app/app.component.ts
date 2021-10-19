@@ -7,6 +7,7 @@ export interface PeriodicElement {
   symbol: string;
 }  
 
+/*
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
@@ -19,6 +20,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
+*/
 
 /**
  * @title Basic use of `<table mat-table>`
@@ -26,12 +28,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
   selector: 'app-root',
-  templateUrl: '.app.component.html',
-  styleUrls: ['.app.component.scss']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'project1';
-  dataSource = ELEMENT_DATA;
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  
 }
 
