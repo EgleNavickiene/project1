@@ -27,7 +27,7 @@ export const ELEMENT_DATA: ProductsTable[] = [
     position: 3,
     name: 'Phone Standard',
     price: 299,
-    description: '',
+    description:'',
     photo: 'https://lt2.pigugroup.eu/colours/314/919/26/31491926/apple-iphone-se-2020-128gb-black-price_xbig.jpg'
   }
   ];

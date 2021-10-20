@@ -10,12 +10,19 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatTableModule} from '@angular/material/table';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+import { WhatNextComponent } from './what-next/what-next.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsTableComponent
+    ProductsTableComponent,
+    FirstComponent,
+    SecondComponent,
+    WhatNextComponent,    
   ],
   imports: [
     BrowserModule,
@@ -24,8 +31,7 @@ import {MatTableModule} from '@angular/material/table';
     MatSliderModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatTableModule,
-    
+    MatTableModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]
