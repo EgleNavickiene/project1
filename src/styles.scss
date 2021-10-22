@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+  /* You can add global styles to this file, and also import other style files */
 
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -7,16 +7,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
+  }  
 
   p {
     margin: 0;
@@ -43,28 +34,38 @@
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
+  .container {
+    width: 1240px;
     display: flex;
-    margin: 82px auto 32px;
+    margin: 20px auto 20px;
     padding: 0 16px;
-    max-width: 960px;
+    max-width: 1240px;
     flex-direction: column;
     align-items: center;
+  }
+
+  .small-container {
+    width: 800px;
+    display: flex;
+    margin: 20px auto 20px;
+    padding: 0 16px;
+    max-width: 1240px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //my divider made with empty <div></div>
+  .horizontal-divider-my {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid lightslategray;
+  } 
+
+  // neklauso!!! :/
+  .mat-divider .mat-divider-horizontal {
+    width: 100%;
+    height: 1px;
   }
 
   svg.material-icons {
@@ -76,13 +77,13 @@
     margin-right: 8px;
   }
 
-  .card svg.material-icons path {
-    fill: #888;
-  }
-
   .table-width-100{
     width: 100%;
   }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }  
 
   .card-container {
     display: flex;
@@ -144,21 +145,6 @@
     margin-left: 60px;
   }
 
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
-  svg#rocket-smoke {
-    height: calc(100vh - 95px);
-    position: absolute;
-    top: 10px;
-    right: 180px;
-    z-index: -10;
-  }
-
   a,
   a:visited,
   a:hover {
@@ -203,26 +189,6 @@
     margin: 0;
   }
 
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-
   footer {
     position:fixed;
     bottom:10px;
@@ -232,8 +198,7 @@
     line-height: 20px;
   }
 
-  footer a {
-    
+  footer a {    
     display: flex;
     align-items: center;
   }
@@ -300,5 +265,5 @@
     }
   }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

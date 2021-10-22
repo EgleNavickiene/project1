@@ -3,17 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsTableComponent } from './product/product-table.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MatSliderModule } from '@angular/material/slider';
-import {MatButtonModule} from '@angular/material/button';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatTableModule} from '@angular/material/table';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { WhatNextComponent } from './what-next/what-next.component';
+import { ProductsTableComponent } from './product/product-table.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatToolbarModule} from '@angular/material/toolbar'
+import {MatIconModule} from '@angular/material/icon';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 @NgModule({
@@ -22,7 +27,10 @@ import { WhatNextComponent } from './what-next/what-next.component';
     ProductsTableComponent,
     FirstComponent,
     SecondComponent,
-    WhatNextComponent,    
+    WhatNextComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProductDetailsComponent,    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +39,10 @@ import { WhatNextComponent } from './what-next/what-next.component';
     MatSliderModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatTableModule,    
+    MatTableModule,  
+    MatDividerModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
