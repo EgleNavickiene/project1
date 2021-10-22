@@ -33,8 +33,22 @@
           No description 
         </p>
       </ng-template> -->
-      {{product.description}} </td>
+      {{product.description}} </td>  
   </ng-container>  
+
+  
+  <ng-container matColumnDef="button">
+    <th class="margin-left-24 margin-right-24 text-bold text-blue" mat-header-cell *matHeaderCellDef>Button</th>
+    <td class="margin-left-24 margin-right-24" mat-cell *matCellDef="let element">
+     
+      <a mat-button-raised [routerLink]="['']">
+        <!-- [../products', product.position] -->
+        More...
+      </a>
+    </td>
+</ng-container> 
+
+
 
   <ng-container  matColumnDef="photo">
     <th class="margin-left-24 text-bold text-blue" mat-header-cell *matHeaderCellDef> Photo </th>

@@ -1,7 +1,7 @@
 
 
 
-<div class="container" role="main">
+<div class="small-container">
 
   <p>first works!</p>
 
@@ -12,25 +12,33 @@
   
 
 
-  <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+  <mat-slider 
+    min="1" max="100" step="1" value="50">
+  </mat-slider>
   <p></p>
 
   <button mat-button color="primary">Button</button>
 
   <!-- neveikia... -->
   <mat-divider></mat-divider>
+  <p></p>
   <!-- 
     Pabandyti  dar viena:
     <md-list><md-divider></md-divider></md-list>   
   -->
 
-  <div class="horizontal-divider-my"></div>
+  
 
   <button mat-flat-button color="primary">Primary</button>
 
-  <div class="horizontal-divider-my"></div>
+  
   <p></p>
-  <mat-spinner></mat-spinner> 
+  <mat-divider></mat-divider>
+  <p></p>
+  <div class="content-center mat-progress-spinner ">
+    <mat-spinner></mat-spinner> 
+  </div>
+  
 
 </div>
 
