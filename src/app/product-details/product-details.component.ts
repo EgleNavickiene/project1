@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import {ELEMENT_DATA} from '../products';
 
+
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -20,10 +22,11 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.productId = this.route.snapshot.params.id;
-        //console.log(this.productId);
-    // Priskiriame produkto objektui, duomenis is duomenu masyvo pagal produkto/elemento ID
+        console.log(this.productId);
+    // Priskiriame produkto objektui, duomenis is duomenu masyvo 
+    //pagal produkto/elemento ID
     this.product = ELEMENT_DATA[this.productId - 1];
-        // console.log(this.product);
+        console.log(this.product);
   }
 
 }

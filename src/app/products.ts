@@ -5,7 +5,7 @@ export interface ProductsTable {
     description: string;
     photo: string;
     camera:string;
-    dimmensions: string;
+    dimmentions: string;
     battery: string;
     }  
   
@@ -17,7 +17,7 @@ export interface ProductsTable {
       description: 'A large phone with one of the best screens',
       photo: 'https://lt3.pigugroup.eu/colours/456/239/33/45623933/apple-iphone-13-128gb-blue_xbig.jpg',
       camera:'64 + 12 + 5 + 5 Mpx',
-      dimmensions: '177 x 7 x 80 mm',
+      dimmentions: '177 x 7 x 80 mm',
       battery: '5000 mAh',
     },
     {
@@ -27,7 +27,7 @@ export interface ProductsTable {
       description: 'A great phone with one of the best cameras',
       photo: 'https://lt1.pigugroup.eu/colours/347/381/66/34738166/apple-iphone-12-mini-64gb-white-kaina_xbig.jpg',
       camera:'48 + 12 + 5 + 5 Mpx',
-      dimmensions: '128 x 9 x 79 mm',
+      dimmentions: '128 x 9 x 79 mm',
       battery: '4500 mAh',
     },
     {
@@ -37,7 +37,7 @@ export interface ProductsTable {
       description:'',
       photo: 'https://lt2.pigugroup.eu/colours/314/919/26/31491926/apple-iphone-se-2020-128gb-black-price_xbig.jpg',
       camera:'32 + 8 + 5 + 5 Mpx',
-      dimmensions: '168 x 9 x 88 mm',
+      dimmentions: '168 x 9 x 88 mm',
       battery: '3200 mAh',
     }
     ];

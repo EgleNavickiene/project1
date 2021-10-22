@@ -1,4 +1,31 @@
 
 
-<p>product-details works!</p>
+<p class="text-center">product-details works!</p>
 
+<p> </p>
+  <!-- tai veikia tai neveikia... -->
+  <mat-divider></mat-divider>
+<p></p>
+
+<div class="small-container">
+    <div class="flex-row flex-dir-column">
+        <div class="col">
+            {{this.product.name}}
+        </div>
+        <div class="col">
+            {{product.price}} €
+        </div>
+    
+    <div class="flex-row flex-dir-column">
+        <div class="col">
+            Dimmentions: {{product.dimmentions}}
+        </div>
+        <div class="col">
+           Camera:  {{product.camera}}
+        </div>
+        <div class="col">
+          Battery:  {{product.battery}}
+        </div>
+    </div>
+
+</div>

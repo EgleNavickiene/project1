@@ -3,23 +3,39 @@
 
 <div class="small-container">
 
-  <p>first works!</p>
+  <p>contact works!</p>
 
-  <div class="horizontal-divider-my"></div>
+  <mat-divider></mat-divider>
+  <p></p>
 
-  <h2>Slider Component</h2>  
-
-  
-
+  <h2 class="margin-top-10">Slider Component</h2>  
 
   <mat-slider 
     min="1" max="100" step="1" value="50">
   </mat-slider>
   <p></p>
 
-  <button mat-button color="primary">Button</button>
+  <div class="contact-form">
+    <form class="example-form">
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <textarea matInput placeholder="Enter your email"></textarea>
+        </mat-form-field>
+      </div>
+      
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Leave a comment</mat-label>
+          <textarea matInput placeholder="Leave a comment"></textarea>
+        </mat-form-field>
+      </div>      
+    </form>
+  </div>
 
-  <!-- neveikia... -->
+  <button mat-raised-button color="basic">Send your comment</button>
+<p> </p>
+  <!-- tai veikia tai neveikia... -->
   <mat-divider></mat-divider>
   <p></p>
   <!-- 
@@ -29,7 +45,7 @@
 
   
 
-  <button mat-flat-button color="primary">Primary</button>
+  <button mat-flat-button color="primary">Primary button</button>
 
   
   <p></p>

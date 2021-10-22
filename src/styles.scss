@@ -16,8 +16,11 @@
   .text-center {
     text-align: center;
   }
-  
 
+  .margin-top-10 {
+    margin-top: 10px;
+  }
+  
   .spacer {
     flex: 1;
   }
@@ -70,7 +73,7 @@
   }
 
   //mano, padarytas iš tuščio <div></div>
-  .horizontal-divider-my {
+  .horizontal-divider-my {    
     width: 70%;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -281,4 +284,4 @@
   }
 
     html, body { height: 100%; }
-    body { margin: 0 auto; font-family: Roboto, "Helvetica Neue", sans-serif; }
+    body { margin: 30px auto; font-family: Roboto, "Helvetica Neue", sans-serif; }
