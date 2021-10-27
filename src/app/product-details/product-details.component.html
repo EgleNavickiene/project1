@@ -8,14 +8,18 @@
 <p></p>
 
 <div class="small-container">
-    <div class="flex-row flex-dir-column">
-        <div class="col">
-            {{this.product.name}}
+    <div class="flex-row flex-dir-column ">
+        <div class="col product-name">
+            {{product.name}}
         </div>
+        
         <div class="col">
-            {{product.price}} €
+            <img class="product-photo" src="{{product.photo}}" alt="{{product.name}}"> 
         </div>
-    
+
+        <div class="col">
+           Price: {{product.price}} €
+        </div>
     <div class="flex-row flex-dir-column">
         <div class="col">
             Dimmentions: {{product.dimmentions}}

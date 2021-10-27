@@ -18,8 +18,12 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router
-    ) { }
+    ) { 
 
+    }
+
+    // Kaip pasiekti produkto :id parametra is url?
+    // Si funkcija suveikia visada, kai uzkraunamas komponentas
   ngOnInit(): void {
     this.productId = this.route.snapshot.params.id;
         console.log(this.productId);
